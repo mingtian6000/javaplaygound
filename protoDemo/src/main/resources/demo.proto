@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package org.example.protobuf.proto;
+
+//生成 proto 文件所在包路径
+option java_package = "org.example.protobuf.proto";
+
+//生成 proto 文件名
+option java_outer_classname="DemoProto";
+
+message Demo{
+  int32 id = 1;
+  string code = 2;
+  string name = 3;
+}
